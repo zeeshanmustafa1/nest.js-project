@@ -1,0 +1,132 @@
+[
+  {
+    "source": "/lenders/",
+    "destination": "/lender/",
+    "statusCode": 301
+  },
+  {
+    "source": "/agencies/",
+    "destination": "/agency/",
+    "statusCode": 301
+  },
+  {
+    "source": "/agent",
+    "destination": "/agents/",
+    "statusCode": 301
+  },
+  {
+    "source": "/about",
+    "destination": "/about-us/",
+    "statusCode": 301
+  },
+  {
+    "source": "/label/:path*",
+    "destination": "/status/:path*",
+    "statusCode": 301
+  },
+  {
+    "source": "/feature/:path*",
+    "destination": "/",
+    "statusCode": 301
+  },
+  {
+    "source": "/status/sale",
+    "destination": "/status/sold/",
+    "statusCode": 301
+  },
+  {
+    "source": "/status/lease",
+    "destination": "/status/leased/",
+    "statusCode": 301
+  },
+  {
+    "source": "/agency/:slug/page/:path*",
+    "destination": "/agency/:slug/",
+    "statusCode": 301
+  },
+  {
+    "source": "/agent/:slug/page/:path*",
+    "destination": "/agent/:slug/",
+    "statusCode": 301
+  },
+  {
+    "source": "/property-type/:slug/page/:path*",
+    "destination": "/property-type/:slug/",
+    "statusCode": 301
+  },
+  {
+    "source": "/state/:slug/page/:path*",
+    "destination": "/state/:slug/",
+    "statusCode": 301
+  },
+  {
+    "source": "/status/:slug/page/:path*",
+    "destination": "/status/:slug/",
+    "statusCode": 301
+  },
+  {
+    "source": "/city/:path*",
+    "destination": "/states/",
+    "statusCode": 301
+  },
+  {
+    "source": "/country/:path*",
+    "destination": "/states/",
+    "statusCode": 301
+  },
+  {
+    "source": "/area/:path*",
+    "destination": "/states/",
+    "statusCode": 301
+  },
+  {
+    "source": "/testimonial/:testimonialSlug",
+    "destination": "/testimonials/",
+    "statusCode": 301
+  },
+  {
+    "source": "/testimonial-category/:testimonialSlug",
+    "destination": "/testimonials/",
+    "statusCode": 301
+  },
+  {
+    "source": "/submit/",
+    "destination": "https://submit.traded.co/",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/asset-class/",
+    "destination": "/blog/",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/asset-class/:slug/",
+    "destination": "/category/:slug/",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/markets/:slug/",
+    "destination": "/category/:slug/",
+    "statusCode": 301
+  },
+  {
+    "source": "/category/markets/",
+    "destination": "/blog/",
+    "statusCode": 301
+  },
+  {
+    "source": "/state/",
+    "destination": "/states/",
+    "statusCode": 301
+  },
+  {
+    "source": "/state/:slug/",
+    "destination": "/states/:slug/",
+    "statusCode": 301
+  },
+  {
+    "source": "/agents/",
+    "destination": "/brokers/",
+    "statusCode": 301
+  }
+]

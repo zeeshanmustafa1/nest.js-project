@@ -1,0 +1,34 @@
+query DealComparables($slug: ID!, $page: Int!, $limit: Int!) {
+  dealComparables(slug: $slug, page: $page, limit: $limit,) {
+        totalDeals
+        id
+          slug
+          title
+          mainImage
+          closingDate
+          transactionType
+          address
+          salePrice
+          pricePerSquareFoot
+          assetType
+          dealType
+          createdAt
+          feeds
+          totalSquareFootageDeal
+        profiles {
+            id
+            slug
+            name
+            thumbnail
+            createdAt
+            updatedAt
+          }
+        
+        properties {
+          id
+            state
+            longitude
+            latitude
+        }
+      }
+}

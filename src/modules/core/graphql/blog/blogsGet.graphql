@@ -1,0 +1,12 @@
+query GetBlogs($limit: Int, $page: Int, $q: String, $tagSlugs: [String!]) {
+    blogs(limit: $limit, page: $page, q: $q, tagSlugs: $tagSlugs) {
+    id
+    title
+    description
+    status
+    createdAt
+    updatedAt
+    slug
+    image
+  }
+}

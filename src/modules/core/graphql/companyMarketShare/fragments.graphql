@@ -1,0 +1,15 @@
+fragment CompanyMarketShare on Company {
+  id
+  slug
+  title
+  createdAt
+  updatedAt
+  mainImage
+  totalVolume
+  dealsCount
+  profilesCount
+  totalSold
+  totalLeased
+  dealsCount
+  totalSquareFootage
+}

@@ -1,0 +1,5 @@
+query CompanyMarketResolver($companyType: String!, $sortBy: String!) {
+  companyMarket(companyType: $companyType, sortBy: $sortBy) {
+    ...CompanyMarketShare
+  }
+}

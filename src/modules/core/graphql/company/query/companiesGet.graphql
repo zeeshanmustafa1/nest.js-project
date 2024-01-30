@@ -1,0 +1,13 @@
+query CompaniesGet($page: Int, $limit: Int, $companyType: String!) {
+  companies(page: $page, limit: $limit, companyType: $companyType) {
+    nodes {
+      ...CompanyParts
+    }
+    pageInfo {
+      hasNextPage,
+      hasPreviousPage,
+      endCursor,
+      startCursor,
+    }
+  }
+}

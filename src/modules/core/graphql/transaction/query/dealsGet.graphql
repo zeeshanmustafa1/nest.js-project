@@ -1,0 +1,14 @@
+query DealsGet($page: Int, $limit: Int) {
+  deals(page: $page, limit: $limit) {
+    id
+    slug
+    feeds
+    transactionType
+    createdAt
+    mainImage
+    title
+    salePrice
+    feeds
+    transactionType
+  }
+}

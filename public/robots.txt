@@ -1,0 +1,15 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://traded.co/
+
+# Sitemaps
+Sitemap: https://traded.co/sitemap.xml
+
+Disallow: /?ids=
+Disallow: /?tab
+Disallow: /?ids
+Disallow: /tag
+Disallow: /page

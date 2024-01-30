@@ -1,0 +1,9 @@
+query CompanyGraphGet($slug: String!, $companyType: String!) {
+  graphs(slug: $slug, companyType: $companyType) {
+    deals
+    lease
+    loan
+    sale
+    volume
+  }
+}

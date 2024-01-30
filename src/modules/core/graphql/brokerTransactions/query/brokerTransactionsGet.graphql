@@ -1,0 +1,33 @@
+query BrokerTransactions($slug: ID!, $page: Int!, $limit: Int!, $type: String, $sortBy: String, $area: String, $assetClass: [String!]) {
+  brokerTransactions(slug: $slug, page: $page, limit: $limit, type: $type, sortBy: $sortBy, area: $area, assetClass: $assetClass){
+      id
+      slug
+      title
+      mainImage
+      closingDate
+      transactionType
+      totalDeals
+      profiles {
+        id
+        slug
+        name
+        thumbnail
+        createdAt
+        updatedAt
+      }
+      address
+      properties {
+        id
+        state
+        longitude
+        latitude
+      }
+      salePrice
+      pricePerSquareFoot
+      assetType
+      dealType
+      createdAt
+      feeds
+      totalSquareFootageDeal
+    }
+  }

@@ -1,0 +1,120 @@
+query recentDealGet($limit: Int!, $state: String){
+  recentDeal(limit: $limit, state: $state) {
+    recentSales {
+      id
+      slug
+      mainImage
+      closingDate
+      lastClosing
+      salePrice
+      pricePerSquareFoot
+      totalSquareFootageDeal
+      assetType
+      feeds
+      transactionType
+
+      profiles {
+        id
+        slug
+        name
+        thumbnail
+        updatedAt
+        createdAt
+      }
+
+      companies {
+        id
+        slug
+        mainImage
+        updatedAt
+        createdAt
+      }
+
+      properties {
+        id
+        displayAddress
+        state
+      }
+
+      createdAt
+    }
+
+    recentLoans {
+      id
+      slug
+      mainImage
+      closingDate
+      lastClosing
+      salePrice
+      pricePerSquareFoot
+      totalSquareFootageDeal
+      assetType
+      feeds
+      transactionType
+
+      profiles {
+        id
+        slug
+        name
+        thumbnail
+        updatedAt
+        createdAt
+      }
+
+      companies {
+        id
+        slug
+        mainImage
+        updatedAt
+        createdAt
+      }
+
+      properties {
+        id
+        displayAddress
+        state
+      }
+
+      createdAt
+    }
+
+    recentLeases {
+      id
+      slug
+      mainImage
+      closingDate
+      lastClosing
+      salePrice
+      pricePerSquareFoot
+      totalSquareFootageDeal
+      assetType
+      feeds
+      transactionType
+
+      profiles {
+        id
+        slug
+        name
+        thumbnail
+        updatedAt
+        createdAt
+      }
+
+      companies {
+        id
+        slug
+        mainImage
+        updatedAt
+        createdAt
+      }
+
+      properties {
+        id
+        displayAddress
+        state
+      }
+
+      createdAt
+    }
+  }
+}

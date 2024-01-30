@@ -1,0 +1,68 @@
+query DealGet($slug: ID!) {
+  deal(slug: $slug) {
+    id
+    slug
+    feeds
+    transactionType
+    createdAt
+    title
+    mainImage
+    dealType
+    dealsInfo
+    instagramId
+    description
+    metaDescription
+    pricePerSquareFoot
+    totalSquareFootageDeal
+    properties {
+      id
+      displayAddress
+      latitude
+      longitude
+    }
+    salePrice
+    assetType
+    parties
+    caption
+    profiles {
+      id
+      slug
+      name
+      thumbnail
+      dealsCount
+      totalSold
+      totalLeaseDeals
+      totalFinanced
+      createdAt
+      updatedAt
+      company {
+        id
+        title
+        slug
+        type
+        createdAt
+        updatedAt
+      }
+    }
+    companies {
+      id
+      slug
+      mainImage
+      title
+      createdAt
+      updatedAt
+      dealsCount
+      totalVolume
+    }
+     lenders {
+      id
+      slug
+      mainImage
+      title
+      createdAt
+      updatedAt
+      dealsCount
+      totalVolume
+    }
+  }
+}

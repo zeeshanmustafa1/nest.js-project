@@ -1,0 +1,5 @@
+query CompanyGet($slug: String!, $companyType: String!) {
+  company(slug: $slug, companyType: $companyType) {
+    ...CompanyParts
+  }
+}

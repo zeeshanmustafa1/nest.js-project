@@ -1,0 +1,6 @@
+query CompanyStatisticsGraph ($slug: String!, $companyType: String!){
+  companyStatisticsGraph(slug: $slug, companyType: $companyType){
+    assetClassPercentage
+    locationPercentage
+  }
+}
