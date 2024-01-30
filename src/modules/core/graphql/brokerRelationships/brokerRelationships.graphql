@@ -1,0 +1,45 @@
+query BrokerRelationships ($slug: String!, $page: Int!, $limit: Int!){
+  brokerRelationships(slug: $slug, page: $page, limit: $limit) {
+    agents {
+      totalCount
+      nodes {
+        id
+      slug
+      name
+      email
+      thumbnail
+      totalVolume
+      dealsCount
+      firstDealTogether
+      numberOfDealsTogether
+      largestDealSaleTogether
+      lastDealTogether
+
+      agencyFirstDealTogether
+      agencyNumberOfDealsTogether
+      agencyLargestDealSaleTogether
+      agencyLastDealTogether
+      createdAt
+      updatedAt
+      }
+    }
+    agencies {
+      totalCount
+      nodes {
+        type
+        slug
+        mainImage
+        title
+      }
+    }
+    lenders {
+      totalCount
+      nodes {
+        type
+        slug
+        mainImage
+        title
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+query Companies($companyType: String!, $page: Int, $limit: Int, $sortBy: String, $agentsSortBy: String, $agentsLimit: Int!, $agentsPage: Int!, $area: String, $type: String, $priceRange: String, $loanAmount: String) {
+  companies(companyType: $companyType, page: $page, limit: $limit, sortBy: $sortBy, area: $area, type: $type, priceRange: $priceRange, loanAmount: $loanAmount) {
+    totalCount
+    nodes {
+      address
+      title
+      mainImage
+      totalVolume
+      totalSquareFootage
+      dealsCount
+      totalFinanced
+      lastClosing
+      description
+      slug
+      stateTypesDropdown
+      profilesCount
+      linkedinUrl
+      facebookUrl
+      twitterUrl
+      instagramUrl
+      agents(sortBy: $agentsSortBy, limit: $agentsLimit, page: $agentsPage) {
+        mainImage
+        thumbnail
+        slug
+      }
+    }
+  }
+}

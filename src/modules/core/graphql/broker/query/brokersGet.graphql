@@ -1,0 +1,27 @@
+query BrokersGet($page: Int, $limit: Int) {
+  brokers(page: $page, limit: $limit) {
+    nodes {
+      id,
+      bio,
+      name,
+      phone,
+      bio,
+      type,
+      thumbnail,
+      className,
+      companyId,
+      company {
+        id,
+        title,
+        slug,
+      }
+      type,
+    }
+    pageInfo {
+      hasNextPage,
+      hasPreviousPage,
+      endCursor,
+      startCursor,
+    }
+  }
+}

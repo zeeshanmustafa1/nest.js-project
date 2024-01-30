@@ -1,0 +1,6 @@
+query BrokerStatisticsGraph($slug: String!) {
+  brokerStatisticsGraph(slug: $slug) {
+    assetClassPercentage
+    locationPercentage
+  }
+}

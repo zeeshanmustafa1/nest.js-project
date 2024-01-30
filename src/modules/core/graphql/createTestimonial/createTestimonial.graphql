@@ -1,0 +1,17 @@
+mutation CreateTestimonial ($firstName: String!, $lastName: String!, $email: String!, $state: String!, $content: String!, $titleAndCompany: String!, $imageUrl: String) {
+  createTestimonial(
+    input: {firstName: $firstName, lastName: $lastName, email: $email, state: $state, content: $content, titleAndCompany: $titleAndCompany, imageUrl: $imageUrl}
+  ) {
+    testimonial {
+      clientSlug
+      clientEmail
+      state
+      clientImage
+      companySlug
+      clientCompany
+      clientDesignation
+      title
+      content
+    }
+  }
+}

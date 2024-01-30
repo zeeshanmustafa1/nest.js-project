@@ -1,0 +1,40 @@
+query DealsComparablesGet($slug: ID!, $first: Int, $after: String) {
+  deal(slug: $slug) {
+    comparables(first: $first, after: $after) {
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+      nodes {
+        id
+        slug
+        title
+        mainImage
+        closingDate
+        transactionType
+        address
+        salePrice
+        pricePerSquareFoot
+        assetType
+        dealType
+        createdAt
+        feeds
+        totalSquareFootageDeal
+        profiles {
+          id
+          slug
+          name
+          thumbnail
+          createdAt
+          updatedAt
+        }
+        properties {
+          id
+          state
+          longitude
+          latitude
+        }
+      }
+    }
+  }
+}

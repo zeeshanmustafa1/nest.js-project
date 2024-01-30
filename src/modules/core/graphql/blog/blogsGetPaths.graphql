@@ -1,0 +1,5 @@
+query GetBlogsPaths($limit: Int) {
+  blogs(limit: $limit) {
+    slug
+  }
+}

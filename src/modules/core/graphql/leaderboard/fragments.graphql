@@ -1,0 +1,11 @@
+fragment LeaderBoardItemFields on Broker {
+    id
+    name
+    slug
+    thumbnail
+    createdAt
+    updatedAt
+    dealsCount
+    totalVolume
+    totalSquareFootage
+  }

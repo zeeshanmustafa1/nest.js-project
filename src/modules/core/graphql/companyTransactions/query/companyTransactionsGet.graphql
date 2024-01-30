@@ -1,0 +1,34 @@
+query CompanyTransactions($slug: ID!, $page: Int!, $limit: Int!, $companyType: String!, $type: String, $sortBy: String, $area: String, $assetClass: [String!]) {
+  companyTransactions(slug: $slug, page: $page, limit: $limit, companyType: $companyType, type: $type, sortBy: $sortBy, area: $area, assetClass: $assetClass) {
+    id
+    slug
+    title
+    mainImage
+    closingDate
+    transactionType
+    totalDeals
+    profiles {
+      id
+      slug
+      name
+      thumbnail
+      createdAt
+      updatedAt
+    }
+    address
+    properties {
+      id
+      state
+      longitude
+      latitude
+    }
+    salePrice
+    loanAmount
+    pricePerSquareFoot
+    assetType
+    dealType
+    createdAt
+    feeds
+    totalSquareFootageDeal
+  }
+}

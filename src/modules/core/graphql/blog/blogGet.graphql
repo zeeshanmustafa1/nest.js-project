@@ -1,0 +1,33 @@
+query GetBlog($slug: ID!) {
+  blog(slug: $slug) {
+          id
+          title
+          description
+          htmlContent
+          status
+    			createdAt
+    			updatedAt
+    			slug
+          author {
+            title
+            image
+          }
+          image
+    			profiles {
+            slug
+            title
+            thumbnail
+            totalSold
+            totalLeased
+            totalFinanced
+            dealsCount
+            company {
+              title
+            }
+          }
+          tags {
+            name
+            slug
+          }
+        }
+      }

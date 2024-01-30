@@ -1,0 +1,62 @@
+query SearchGet($term: String) {
+  search(term: $term) {
+    agents {
+      id
+      slug
+      name
+      createdAt
+      updatedAt
+      email
+      type
+      mainImage
+      thumbnail
+      companyName
+      dealsCount
+      totalSold
+      totalFinanced
+      lastClosing
+    }
+    agencies {
+      id
+      slug
+      title
+      createdAt
+      updatedAt
+      mainImage
+      type
+      profilesCount
+      totalSold
+      totalFinanced
+      dealsCount
+    }
+    lenders {
+      id
+      slug
+      title
+      createdAt
+      updatedAt
+      mainImage
+      type
+      totalFinanced
+      dealsCount
+      totalSquareFootage
+      profilesCount
+    }
+    deals {
+      id
+      slug
+      title
+      address
+      mainImage
+      lastClosing
+      assetType
+      totalSquareFootageDeal
+      feeds
+      transactionType
+      properties {
+          latitude
+          longitude
+      }
+    }
+  }
+}

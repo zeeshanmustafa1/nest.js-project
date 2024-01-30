@@ -1,0 +1,103 @@
+query BrokerGet($slug: ID!) {
+  broker(slug: $slug) {
+    id
+    slug
+    name
+    title
+    email
+    phone
+    instagramHandle
+    facebookHandle
+    vimeoHandle
+    youtubeHandle
+    linkedinHandle
+    websiteUrl
+    googleplusHandle
+    pinterestHandle
+    twitterHandle
+    bio
+    bioSummary
+    type
+    thumbnail
+    totalSold
+    totalFinanced
+    lastClosing
+    totalSquareFootage
+    totalVolume
+    createdAt
+    updatedAt
+    className
+    dealsCount
+    stateWithMostDeals
+    fellowWithMostDeals
+    assetTypeWithMostDeals
+    leaderBoardTags
+    agencyFirstDealTogether
+    agencyNumberOfDealsTogether
+    agencyLargestDealSaleTogether
+    agencyLastDealTogether
+    assetTypesDropdown
+    transactionTypesDropdown
+    totalLeaseDeals
+    stateTypesDropdown
+    deals(page: 1, limit: 5) {
+      id
+      slug
+      title
+      mainImage
+      closingDate
+      transactionType
+      profiles {
+        id
+        slug
+        name
+        thumbnail
+        createdAt
+        updatedAt
+      }
+      address
+      properties {
+        id
+        state
+        longitude
+        latitude
+      }
+      salePrice
+      pricePerSquareFoot
+      assetType
+      dealType
+      createdAt
+      feeds
+      totalSquareFootageDeal
+    }
+    dealRanking {
+      feeds
+      transactionType
+      slug
+      id
+      mainImage
+      address
+      salePrice
+      totalSquareFootageDeal
+      assetType
+      closingDate
+      createdAt
+    }
+    lastDeal {
+      salePrice
+      transactionType
+      feeds
+      slug
+      lastClosing
+      id
+      createdAt
+    }
+    company {
+      id
+      slug
+      title
+      createdAt
+      updatedAt
+    }
+  }
+}

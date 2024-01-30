@@ -1,0 +1,33 @@
+query Deals($page: Int, $limit: Int, $assetClass: String, $area: String, $type: String, $priceRange: String, $dateRange: String, $search: String, $sortBy: String, $state: String) {
+  deals(page: $page, limit: $limit, assetClass: $assetClass, area: $area, type: $type, priceRange: $priceRange, dateRange: $dateRange, search: $search, sortBy: $sortBy, state: $state) {
+    id
+      slug
+      title
+      mainImage
+      closingDate
+      transactionType
+      totalDeals
+      profiles {
+        id
+        slug
+        name
+        thumbnail
+        createdAt
+        updatedAt
+      }
+      address
+      properties {
+        id
+        state
+        longitude
+        latitude
+      }
+      salePrice
+      pricePerSquareFoot
+      assetType
+      dealType
+      createdAt
+      feeds
+      totalSquareFootageDeal
+  }
+}

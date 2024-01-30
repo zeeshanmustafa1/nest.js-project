@@ -1,0 +1,75 @@
+query BrokerLeaderBoard ($slug: String!) {
+  agentLeaderBoards(slug: $slug) {
+    dealJunkie {
+      id
+      slug
+      name
+      totalVolume
+      dealsCount
+      thumbnail
+      createdAt
+      updatedAt
+    }
+    hotDeals {
+      id
+      slug
+      name
+      totalVolume
+      dealsCount
+      thumbnail
+      createdAt
+      updatedAt
+    }
+    leaseShark {
+      id
+      slug
+      name
+      totalVolume
+      totalSquareFootage
+      dealsCount
+      thumbnail
+      createdAt
+      updatedAt
+    }
+    loanShark {
+      id
+      slug
+      name
+      totalVolume
+      dealsCount
+      thumbnail
+      createdAt
+      updatedAt
+    }
+    risingTalent {
+      id
+      slug
+      name
+      totalVolume
+      dealsCount
+      thumbnail
+      createdAt
+      updatedAt
+    }
+    unicorn {
+      id
+      slug
+      name
+      totalVolume
+      dealsCount
+      thumbnail
+      createdAt
+      updatedAt
+    }
+    whales {
+      id
+      slug
+      name
+      totalVolume
+      dealsCount
+      thumbnail
+      createdAt
+      updatedAt
+    }
+  }
+}

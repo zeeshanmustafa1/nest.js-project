@@ -1,0 +1,25 @@
+query LeaderBoardGet ($state: String) {
+    leaderBoardResolver (state: $state) {
+      dealJunkie {
+        ...LeaderBoardItemFields
+      }
+      hotDeals {
+        ...LeaderBoardItemFields
+      }
+      leaseShark {
+        ...LeaderBoardItemFields
+      }
+      loanShark {
+        ...LeaderBoardItemFields
+      }
+      risingTalent {
+        ...LeaderBoardItemFields
+      }
+      unicorn {
+        ...LeaderBoardItemFields
+      }
+      whales {
+        ...LeaderBoardItemFields
+      }
+    }
+  }

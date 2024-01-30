@@ -1,0 +1,6 @@
+mutation SendEmailMutation($input: SendEmailMutationInput!) {
+  sendEmail(input: $input) {
+    success
+    errorMessage
+  }
+}
